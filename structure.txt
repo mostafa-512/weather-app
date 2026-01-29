@@ -1,0 +1,14 @@
+src/
+├── app/
+│   ├── store.ts        # Redux Toolkit
+│   └── hooks.ts        # typed useSelector & useDispatch
+├── features/
+│   └── weather/
+│       ├── weatherSlice.ts   # Thunk + Reducers
+│       ├── weatherTypes.ts   # الـ Interfaces من الدوكيمنتيشن
+│       └── components/       # Components فرعية
+│           ├── WeatherInfo.tsx  # عرض الحرارة والوصف
+│           └── SearchBar.tsx    # الإدخال وزرار الـ Toggle (C/F)
+├── assets/
+│   └── images/               # صور الخلفيات (sunny.jpg, rainy.jpg...)
+└── App.tsx                   # إدارة الـ Dynamic Class للخلفية
